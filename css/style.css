@@ -1,0 +1,143 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+img{
+    height: 97px;
+    margin: 7px 32px;
+} 
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+/*Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 10px;
+}
+
+
+/*Navigation Bar: List Styling*/
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(17, 18, 19);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.9rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 20px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg')  no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;   
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#home p{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+/* Serivces Section */
+#services {
+    margin: -5px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 4px;
+    padding: 18px;
+    border-radius: 41px;
+    background-color: #e5e1e1;
+}
+#services .box img{
+    height: 190px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Utility Classe */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 80px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #a99e9e;
+    color: white;
+    margin: 22px;
+    font-size: 1.5rem;
+    border-radius: 26px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
